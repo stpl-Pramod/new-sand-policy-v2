@@ -1,0 +1,27 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #F0F2F8;
+}
+.page-content{
+    padding-left: 60px;
+}
+div#topnav {
+    background-color: #fff;
+    border-bottom: solid 1px #f1f1f1;
+    padding: 7px 15px;
+}
+.page-container{
+    padding: 10px;
+}
+.footer {
+    color: #37597d;
+    background: #d5e9fe;
+    /* z-index: 10; */
+    z-index: 11;
+    text-align: center;
+    padding: 7px 10px 7px 100px;
+    font-size: 0.7em;
+}
+.footer img {
+    width: 80px;
+}

@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>mahakhanij</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="css/sidebar.css" type="text/css" rel="stylesheet">
+    <link href="css/style.css" type="text/css" rel="stylesheet">
+    <link href="css/header.css" type="text/css" rel="stylesheet">
+   
+</head>
+
+<body>
+    <div class="page-wrapper default-theme sidebar-bg bg1 toggled pinned">
+        <nav class="sidebar ">
+            <div class="sidebar-item sidebar-brand">
+                <a href="#">
+                    <img src="images/revenue_department.png" alt="RevenueDeptLogo">
+                </a>
+            </div>
+            <ul class="nav flex-column" id="nav_accordion">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <i class="_icon">
+                            <img src="images/menu_icons/Dashboard_blue.svg">
+                        </i>
+                        <span class="menu-text">Dashboard</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-bs-toggle="collapse" data-bs-target="#menu_item1" href="#">
+                        <i class="_icon">
+                            <img src="images/menu_icons/Dashboard_blue.svg">
+                        </i>
+                        <span class="menu-text">Parent Layer</span>
+                        <i class="fas fa-angle-down"></i>
+                    </a>
+                    <ul id="menu_item1" class="submenu collapse" data-bs-parent="#nav_accordion">
+                        <li>
+                            <a class="nav-link" href="#">
+                                <div class="d-flex gap-2 align-items-center justify-content-between w-100">
+                                    <span>Elevation  (DSM)</span>
+                                    <div class="d-flex align-items-center gap-2">
+                                        <button type="button" class="btn btn-sm btn-link p-0"><i class="fas fa-eye-slash text-white"></i></button>
+                                        <div class="form-check form-switch mb-0 mt-1">
+                                            <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
+                                            <!-- <label class="form-check-label" for="flexSwitchCheckChecked"></label> -->
+                                          </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="#">
+                                <div class="d-flex gap-2 align-items-center justify-content-between w-100">
+                                    <span>Elevation  (DSM)</span>
+                                    <div class="d-flex align-items-center gap-2">
+                                        <button type="button" class="btn btn-sm btn-link p-0"><i class="fas fa-eye-slash text-white"></i></button>
+                                        <div class="form-check form-switch mb-0 mt-1">
+                                            <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
+                                            <!-- <label class="form-check-label" for="flexSwitchCheckChecked"></label> -->
+                                          </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="#">
+                                <div class="d-flex gap-2 align-items-center justify-content-between w-100">
+                                    <span>Orthomosaic </span>
+                                    <div class="d-flex align-items-center gap-2">
+                                        <button type="button" class="btn btn-sm btn-link p-0"><i class="fas fa-eye text-white"></i></button>
+                                        <div class="form-check form-switch mb-0 mt-1">
+                                            <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
+                                            <!-- <label class="form-check-label" for="flexSwitchCheckChecked"></label> -->
+                                          </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-bs-toggle="collapse" data-bs-target="#menu_CustomLayer" href="#">
+                        <i class="_icon">
+                            <img src="images/menu_icons/Dashboard_blue.svg">
+                        </i>
+                        <span class="menu-text">Custom Layer</span>
+                        <i class="fas fa-angle-down"></i>
+                    </a>
+                    <ul id="menu_CustomLayer" class="submenu collapse" data-bs-parent="#menu_CustomLayer">
+                        <a class="nav-link" data-bs-toggle="collapse" data-bs-target="#menu_Section" href="#">
+                            <i class="_icon">
+                                <img src="images/menu_icons/Dashboard_blue.svg">
+                            </i>
+                            <span class="menu-text">Section</span>
+                            <i class="fas fa-angle-down"></i>
+                        </a>
+                        <ul id="menu_Section" class="submenu collapse" data-bs-parent="#menu_CustomLayer">
+                            <li><a class="nav-link" href="#">Section 1</a></li>
+                            <li><a class="nav-link" href="#">Section 2</a></li>
+                            <li><a class="nav-link" href="#">Section 3</a></li>
+                           
+                        </ul>
+                        <a class="nav-link" data-bs-toggle="collapse" data-bs-target="#menu_Contour" href="#">
+                            <i class="_icon">
+                                <img src="images/menu_icons/Dashboard_blue.svg">
+                            </i>
+                            <span class="menu-text">Contour</span>
+                            <i class="fas fa-angle-down"></i>
+                        </a>
+                        <ul id="menu_Contour" class="submenu collapse" data-bs-parent="#menu_CustomLayer">
+                            <li><a class="nav-link" href="#">Contour 2.0 m</a></li>
+                            <li><a class="nav-link" href="#">Contour 1.0 m</a></li>
+                            <li><a class="nav-link" href="#">Contour 5.0 m</a></li>
+                           
+                        </ul>
+                        <a class="nav-link" data-bs-toggle="collapse" data-bs-target="#menu_Points" href="#">
+                            <i class="_icon">
+                                <img src="images/menu_icons/Dashboard_blue.svg">
+                            </i>
+                            <span class="menu-text">Points</span>
+                            <i class="fas fa-angle-down"></i>
+                        </a>
+                        <ul id="menu_Points" class="submenu collapse" data-bs-parent="#menu_CustomLayer">
+                            <li><a class="nav-link" href="#">Points 5.0 m</a></li>
+                            <li><a class="nav-link" href="#">Points 2.0 m</a></li>
+                            <li><a class="nav-link" href="#">Point 10.0 m</a></li>
+                           
+                        </ul>
+                        <a class="nav-link" data-bs-toggle="collapse" data-bs-target="#menu_Annotation" href="#">
+                            <i class="_icon">
+                                <img src="images/menu_icons/Dashboard_blue.svg">
+                            </i>
+                            <span class="menu-text">Contour</span>
+                            <i class="fas fa-angle-down"></i>
+                        </a>
+                        <ul id="menu_Annotation" class="submenu collapse" data-bs-parent="#menu_CustomLayer">
+                            <li><a class="nav-link" href="#">BP 1</a></li>
+                            <li><a class="nav-link" href="#">Profile</a></li>
+                            <li><a class="nav-link" href="#">Volume</a></li>
+                           
+                        </ul>
+                    </ul>
+                </li>
+        
+        
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <i class="_icon">
+                            <img src="images/menu_icons/Dashboard_blue.svg">
+                        </i>
+                        <span class="menu-text">Settings</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <div class="page-content">
+            <div id="topnav">
+                <div class="row" >
+                    <div class="col align-self-center">
+                        <span class="small">Gare Palms Mines <span class="small fw-semibold text-white1 bg-light py-1 px-2 rounded border border-secondary ms-3">Quarry - 20/08/25v</span></span>
+                        
+                    </div>
+                    <div class="col-auto ">
+                        <div class="dropdown">
+                            <button class="btn btn-sm btn-light dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                Admin
+                            </button>
+                            <ul class="dropdown-menu pt-0 border-0 shadow-sm border-top" aria-labelledby="dropdownMenuButton1">
+                                <li><a class="dropdown-item small" href="#">Tester - Admin</a></li>
+                                
+                                <li><a class="dropdown-item small" href="#"><i class="fas fa-sign-out-alt mr-1"></i> Logout</a></li>
+                            </ul>
+                            </div>
+                            
+                    </div>
+                        
+                </div>
+            </div>
+            <div class="page-container">
+                <div class="card card-body border-0">
+                    <div class="map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1585684.9189327639!2d76.48141108526595!3d18.166502268667102!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1740027894466!5m2!1sen!2sin" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+
+           
+        </div>
+        <div class="footer fixed-bottom">
+            <div class="row">
+                <div class="col-sm-6 order-0 order-lg-0">
+                    <div class="text-center text-lg-start mt-1">
+                        <span id="footerHeading">© 2025 mahakhanij, All rights Reserved.</span>
+                    </div>
+                </div>
+                <div class="col-sm-6 order-1 order-lg-2">
+                    <div class="text-center text-lg-end">
+                        <span>Powered by - <a href="http://shauryatechnosoft.com/" target="_blank">Shaurya Technosoft Pvt. Ltd.</a>
+                            <img src="images/ShauryaTechnosoftLogoSmall.png" alt="Shaurya Technosoft Logo" class="footerlogo">
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        $('#sidebar').on('mouseenter', function () {
+            $("select").blur();
+        });
+    </script>
+</body>
+
+</html>
