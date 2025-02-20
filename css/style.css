@@ -25,3 +25,14 @@ div#topnav {
 .footer img {
     width: 80px;
 }
+.dash-filter {
+    padding: 10px;
+    background: #e8f3ff;
+    margin-bottom: 10px;
+    border: 1px solid #70B6FF;
+    border-radius: 5px;
+    box-shadow: none;
+}
+/* .filterBtnGroup img {
+    filter: hue-rotate(323deg);
+} */

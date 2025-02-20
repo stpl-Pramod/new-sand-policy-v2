@@ -17,153 +17,238 @@
 <body>
     <div class="page-wrapper default-theme sidebar-bg bg1 toggled pinned">
         <nav class="sidebar ">
+            
             <div class="sidebar-item sidebar-brand">
                 <a href="#">
                     <img src="images/revenue_department.png" alt="RevenueDeptLogo">
                 </a>
             </div>
-            <ul class="nav flex-column" id="nav_accordion">
-                <li class="nav-item">
-                    <a class="nav-link" href="#">
-                        <i class="_icon">
-                            <img src="images/menu_icons/Dashboard_blue.svg">
-                        </i>
-                        <span class="menu-text">Dashboard</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" data-bs-toggle="collapse" data-bs-target="#menu_item1" href="#">
-                        <i class="_icon">
-                            <img src="images/menu_icons/Dashboard_blue.svg">
-                        </i>
-                        <span class="menu-text">Parent Layer</span>
-                        <i class="fas fa-angle-down"></i>
-                    </a>
-                    <ul id="menu_item1" class="submenu collapse" data-bs-parent="#nav_accordion">
-                        <li>
-                            <a class="nav-link" href="#">
-                                <div class="d-flex gap-2 align-items-center justify-content-between w-100">
-                                    <span>Elevation  (DSM)</span>
-                                    <div class="d-flex align-items-center gap-2">
-                                        <button type="button" class="btn btn-sm btn-link p-0"><i class="fas fa-eye-slash text-white"></i></button>
-                                        <div class="form-check form-switch mb-0 mt-1">
-                                            <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
-                                            <!-- <label class="form-check-label" for="flexSwitchCheckChecked"></label> -->
-                                          </div>
+            <div class="d-flex flex-column sidebar-ul-group">
+                <ul class="nav" id="nav_accordion">
+                    <!-- <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <i class="_icon">
+                                <img src="images/menu_icons/Dashboard_blue.svg">
+                            </i>
+                            <span class="menu-text">Dashboard</span>
+                        </a>
+                    </li> -->
+                    <li class="nav-item">
+                        <a class="nav-link" data-bs-toggle="collapse" data-bs-target="#menu_item1" href="#">
+                            <i class="_icon">
+                                <img src="images/menu_icons/Parent Layer.svg">
+                            </i>
+                            <span class="menu-text">Parent Layer</span>
+                            <i class="fas fa-angle-down"></i>
+                        </a>
+                        <ul id="menu_item1" class="submenu collapse" data-bs-parent="#nav_accordion">
+                            <li>
+                                <a class="nav-link" href="#">
+                                    <div class="d-flex gap-2 align-items-center justify-content-between w-100">
+                                        <span>Elevation  (DSM)</span>
+                                        <div class="d-flex align-items-center gap-2">
+                                            <button type="button" class="btn btn-sm btn-link p-0"><i class="fas fa-eye-slash text-white"></i></button>
+                                            <div class="form-check form-switch mb-0 mt-1">
+                                                <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
+                                                <!-- <label class="form-check-label" for="flexSwitchCheckChecked"></label> -->
+                                              </div>
+                                        </div>
                                     </div>
-                                </div>
-                            </a>
-                        </li>
-                        <li>
-                            <a class="nav-link" href="#">
-                                <div class="d-flex gap-2 align-items-center justify-content-between w-100">
-                                    <span>Elevation  (DSM)</span>
-                                    <div class="d-flex align-items-center gap-2">
-                                        <button type="button" class="btn btn-sm btn-link p-0"><i class="fas fa-eye-slash text-white"></i></button>
-                                        <div class="form-check form-switch mb-0 mt-1">
-                                            <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
-                                            <!-- <label class="form-check-label" for="flexSwitchCheckChecked"></label> -->
-                                          </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="nav-link" href="#">
+                                    <div class="d-flex gap-2 align-items-center justify-content-between w-100">
+                                        <span>Elevation  (DSM)</span>
+                                        <div class="d-flex align-items-center gap-2">
+                                            <button type="button" class="btn btn-sm btn-link p-0"><i class="fas fa-eye-slash text-white"></i></button>
+                                            <div class="form-check form-switch mb-0 mt-1">
+                                                <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
+                                                <!-- <label class="form-check-label" for="flexSwitchCheckChecked"></label> -->
+                                              </div>
+                                        </div>
                                     </div>
-                                </div>
-                            </a>
-                        </li>
-                        <li>
-                            <a class="nav-link" href="#">
-                                <div class="d-flex gap-2 align-items-center justify-content-between w-100">
-                                    <span>Orthomosaic </span>
-                                    <div class="d-flex align-items-center gap-2">
-                                        <button type="button" class="btn btn-sm btn-link p-0"><i class="fas fa-eye text-white"></i></button>
-                                        <div class="form-check form-switch mb-0 mt-1">
-                                            <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
-                                            <!-- <label class="form-check-label" for="flexSwitchCheckChecked"></label> -->
-                                          </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="nav-link" href="#">
+                                    <div class="d-flex gap-2 align-items-center justify-content-between w-100">
+                                        <span>Orthomosaic </span>
+                                        <div class="d-flex align-items-center gap-2">
+                                            <button type="button" class="btn btn-sm btn-link p-0"><i class="fas fa-eye text-white"></i></button>
+                                            <div class="form-check form-switch mb-0 mt-1">
+                                                <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
+                                                <!-- <label class="form-check-label" for="flexSwitchCheckChecked"></label> -->
+                                              </div>
+                                        </div>
                                     </div>
-                                </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-bs-toggle="collapse" data-bs-target="#menu_CustomLayer" href="#">
+                            <i class="_icon">
+                                <img src="images/menu_icons/Custom Layer.svg">
+                            </i>
+                            <span class="menu-text">Custom Layer</span>
+                            <i class="fas fa-angle-down"></i>
+                        </a>
+                        <ul id="menu_CustomLayer" class="submenu collapse" data-bs-parent="#menu_CustomLayer">
+                            <a class="nav-link" data-bs-toggle="collapse" data-bs-target="#menu_Section" href="#">
+                                <i class="_icon">
+                                    <img src="images/menu_icons/Dashboard_blue.svg">
+                                </i>
+                                <span class="menu-text">Section</span>
+                                <i class="fas fa-angle-down"></i>
                             </a>
-                        </li>
-                    </ul>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" data-bs-toggle="collapse" data-bs-target="#menu_CustomLayer" href="#">
-                        <i class="_icon">
-                            <img src="images/menu_icons/Dashboard_blue.svg">
-                        </i>
-                        <span class="menu-text">Custom Layer</span>
-                        <i class="fas fa-angle-down"></i>
-                    </a>
-                    <ul id="menu_CustomLayer" class="submenu collapse" data-bs-parent="#menu_CustomLayer">
-                        <a class="nav-link" data-bs-toggle="collapse" data-bs-target="#menu_Section" href="#">
+                            <ul id="menu_Section" class="submenu collapse" data-bs-parent="#menu_CustomLayer">
+                                <li><a class="nav-link" href="#">Section 1</a></li>
+                                <li><a class="nav-link" href="#">Section 2</a></li>
+                                <li><a class="nav-link" href="#">Section 3</a></li>
+                               
+                            </ul>
+                            <a class="nav-link" data-bs-toggle="collapse" data-bs-target="#menu_Contour" href="#">
+                                <i class="_icon">
+                                    <img src="images/menu_icons/Dashboard_blue.svg">
+                                </i>
+                                <span class="menu-text">Contour</span>
+                                <i class="fas fa-angle-down"></i>
+                            </a>
+                            <ul id="menu_Contour" class="submenu collapse" data-bs-parent="#menu_CustomLayer">
+                                <li><a class="nav-link" href="#">Contour 2.0 m</a></li>
+                                <li><a class="nav-link" href="#">Contour 1.0 m</a></li>
+                                <li><a class="nav-link" href="#">Contour 5.0 m</a></li>
+                               
+                            </ul>
+                            <a class="nav-link" data-bs-toggle="collapse" data-bs-target="#menu_Points" href="#">
+                                <i class="_icon">
+                                    <img src="images/menu_icons/Dashboard_blue.svg">
+                                </i>
+                                <span class="menu-text">Points</span>
+                                <i class="fas fa-angle-down"></i>
+                            </a>
+                            <ul id="menu_Points" class="submenu collapse" data-bs-parent="#menu_CustomLayer">
+                                <li><a class="nav-link" href="#">Points 5.0 m</a></li>
+                                <li><a class="nav-link" href="#">Points 2.0 m</a></li>
+                                <li><a class="nav-link" href="#">Point 10.0 m</a></li>
+                               
+                            </ul>
+                            <a class="nav-link" data-bs-toggle="collapse" data-bs-target="#menu_Annotation" href="#">
+                                <i class="_icon">
+                                    <img src="images/menu_icons/Dashboard_blue.svg">
+                                </i>
+                                <span class="menu-text">Annotation</span>
+                                <i class="fas fa-angle-down"></i>
+                            </a>
+                            <ul id="menu_Annotation" class="submenu collapse" data-bs-parent="#menu_CustomLayer">
+                                <li><a class="nav-link" href="#">BP 1</a></li>
+                                <li><a class="nav-link" href="#">Profile</a></li>
+                                <li><a class="nav-link" href="#">Volume</a></li>
+                               
+                            </ul>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="nav sidebarFooter mt-auto" id="nav_accordion-footer">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
                             <i class="_icon">
-                                <img src="images/menu_icons/Dashboard_blue.svg">
+                                <img src="images/menu_icons/logout.svg">
                             </i>
-                            <span class="menu-text">Section</span>
+                            <span class="menu-text">Logout</span>
+                        </a>
+                    </li> 
+                    <li class="nav-item">
+                        <a class="nav-link" data-bs-toggle="collapse" data-bs-target="#menu_item2" href="#">
+                            <i class="_icon">
+                                <img src="images/menu_icons/Settings.svg">
+                            </i>
+                            <span class="menu-text">Settings</span>
                             <i class="fas fa-angle-down"></i>
                         </a>
-                        <ul id="menu_Section" class="submenu collapse" data-bs-parent="#menu_CustomLayer">
-                            <li><a class="nav-link" href="#">Section 1</a></li>
-                            <li><a class="nav-link" href="#">Section 2</a></li>
-                            <li><a class="nav-link" href="#">Section 3</a></li>
+                        <ul id="menu_item2" class="submenu collapse" data-bs-parent="#nav_accordion-footer">
+                            <a class="nav-link" data-bs-toggle="collapse" data-bs-target="#menu_Calibration" href="#">
+                                <i class="_icon">
+                                    <img src="images/menu_icons/Dashboard_blue.svg">
+                                </i>
+                                <span class="menu-text">Calibration Tool</span>
+                                <i class="fas fa-angle-down"></i>
+                            </a>
+                            <ul id="menu_Calibration" class="submenu collapse" data-bs-parent="#menu_item2">
+                                <li>
+                                     <a class="nav-link" href="#">Section 1</a> 
+                                    <!-- <div class="text-light bg-primary bg-opacity-25 p-2 small rounded">
+                                        <p class="mb-0 small fw-semibold">Custom Height (in meters)</p>
+                                        <input type="email" class="form-control form-control-sm"  placeholder="0">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                            <label class="form-check-label" for="flexCheckChecked">
+                                              Checked checkbox
+                                            </label>
+                                        </div>
+                                        <p class="small lh-1 text-muted">
+                                            <span class="small">Calibration of Large Projects may take up to 10
+                                                minutes. Please do not close the window</span>
+                                        </p>
+                                        <div class="d-flex gap-2 justify-content-between">
+                                            <button type="button" class="btn btn-sm btn-light">Calibrate</button>
+                                            <button type="button" class="btn btn-sm btn-primary">Reset</button>
+                                        </div>
+                                    </div> -->
+                                </li>
+                            </ul>
+                            <a class="nav-link" data-bs-toggle="collapse" data-bs-target="#menu_Units" href="#">
+                                <i class="_icon">
+                                    <img src="images/menu_icons/Dashboard_blue.svg">
+                                </i>
+                                <span class="menu-text">Units</span>
+                                <i class="fas fa-angle-down"></i>
+                            </a>
+                            <ul id="menu_Units" class="submenu collapse" data-bs-parent="#menu_item2">
+                                <li><a class="nav-link" href="#">Section 1</a></li>
+                            </ul>
+                            <a class="nav-link" data-bs-toggle="collapse" data-bs-target="#menu_Details" href="#">
+                                <i class="_icon">
+                                    <img src="images/menu_icons/Dashboard_blue.svg">
+                                </i>
+                                <span class="menu-text">Details</span>
+                                <i class="fas fa-angle-down"></i>
+                            </a>
+                            <ul id="menu_Details" class="submenu collapse" data-bs-parent="#menu_item2">
+                                <li><a class="nav-link" href="#">Section 1</a></li>
+                            </ul>
                            
                         </ul>
-                        <a class="nav-link" data-bs-toggle="collapse" data-bs-target="#menu_Contour" href="#">
-                            <i class="_icon">
-                                <img src="images/menu_icons/Dashboard_blue.svg">
-                            </i>
-                            <span class="menu-text">Contour</span>
-                            <i class="fas fa-angle-down"></i>
-                        </a>
-                        <ul id="menu_Contour" class="submenu collapse" data-bs-parent="#menu_CustomLayer">
-                            <li><a class="nav-link" href="#">Contour 2.0 m</a></li>
-                            <li><a class="nav-link" href="#">Contour 1.0 m</a></li>
-                            <li><a class="nav-link" href="#">Contour 5.0 m</a></li>
-                           
-                        </ul>
-                        <a class="nav-link" data-bs-toggle="collapse" data-bs-target="#menu_Points" href="#">
-                            <i class="_icon">
-                                <img src="images/menu_icons/Dashboard_blue.svg">
-                            </i>
-                            <span class="menu-text">Points</span>
-                            <i class="fas fa-angle-down"></i>
-                        </a>
-                        <ul id="menu_Points" class="submenu collapse" data-bs-parent="#menu_CustomLayer">
-                            <li><a class="nav-link" href="#">Points 5.0 m</a></li>
-                            <li><a class="nav-link" href="#">Points 2.0 m</a></li>
-                            <li><a class="nav-link" href="#">Point 10.0 m</a></li>
-                           
-                        </ul>
-                        <a class="nav-link" data-bs-toggle="collapse" data-bs-target="#menu_Annotation" href="#">
-                            <i class="_icon">
-                                <img src="images/menu_icons/Dashboard_blue.svg">
-                            </i>
-                            <span class="menu-text">Contour</span>
-                            <i class="fas fa-angle-down"></i>
-                        </a>
-                        <ul id="menu_Annotation" class="submenu collapse" data-bs-parent="#menu_CustomLayer">
-                            <li><a class="nav-link" href="#">BP 1</a></li>
-                            <li><a class="nav-link" href="#">Profile</a></li>
-                            <li><a class="nav-link" href="#">Volume</a></li>
-                           
-                        </ul>
-                    </ul>
-                </li>
-        
-        
-                <li class="nav-item">
-                    <a class="nav-link" href="#">
-                        <i class="_icon">
-                            <img src="images/menu_icons/Dashboard_blue.svg">
-                        </i>
-                        <span class="menu-text">Settings</span>
-                    </a>
-                </li>
-            </ul>
+                    </li>
+                </ul>
+            </div>
+           
         </nav>
         <div class="page-content">
             <div id="topnav">
-                <div class="row" >
-                    <div class="col align-self-center">
-                        <span class="small">Gare Palms Mines <span class="small fw-semibold text-white1 bg-light py-1 px-2 rounded border border-secondary ms-3">Quarry - 20/08/25v</span></span>
+                <div class="row border-bottom pb-1">
+                    <div class="col align-self-center d-flex align-items-center gap-3">
+                        <div class="d-flex align-items-center gap-3">
+                            <span class="small text-nowrap">Kalbhairavnath Constructions And Supliers, Gat No-43, Agadgaon_48 
+                                <!-- <span class="small fw-semibold text-white1 bg-light py-1 px-2 rounded border border-secondary ms-3">Quarry - 20/08/25v</span> -->
+                            </span>
+                            <select class="form-select form-select-sm shadow-none small w-auto bg-light">
+                                <option selected>Quarry - 20/08/25v</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                              </select>
+        
+                            
+                        </div>
+                            <!-- <ol class="breadcrumb small mb-0">
+                                <li class="breadcrumb-item small"><span class=" fw-semibold1 text-primary">Pune</span></li>
+                                <li class="breadcrumb-item small"><span class="fw-semibold1">Library</span></li>
+                                <li class="breadcrumb-item small">Shirur</li>
+                            </ol> -->
+                         
+
                         
                     </div>
                     <div class="col-auto ">
@@ -176,14 +261,96 @@
                                 
                                 <li><a class="dropdown-item small" href="#"><i class="fas fa-sign-out-alt mr-1"></i> Logout</a></li>
                             </ul>
-                            </div>
-                            
+                        </div>
                     </div>
-                        
+                </div>
+                <div class="d-flex gap-2 pt-1">
+                    <div class="col align-self-center">
+                        <ol class="breadcrumb small mb-0">
+                            <li class="breadcrumb-item small"><span class=" fw-semibold1 text-primary">Pune</span></li>
+                            <li class="breadcrumb-item small"><span class="fw-semibold1">Library</span></li>
+                            <li class="breadcrumb-item small">Shirur</li>
+                        </ol>
+                    </div>
+                    <div class="col-auto">
+                        <div class="row justify-content-end">
+                            <div class="col-md-auto col-sm-auto border-end">
+                                <select class="form-select form-select-sm shadow-none small">
+                                    <option selected>Measurement Tools</option>
+                                    <option value="1">Planning Tools</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+                            <div class="col-md-auto">
+                                <div class="d-flex align-items-center gap-1 filterBtnGroup">
+                                    <button class="btn btn-sm bg-primary-subtle" title="Location">
+                                        <img src="images/menu_icons/Location.svg" alt="btnIcon">
+                                    </button>
+                                    <button class="btn btn-sm bg-primary-subtle "  title="2D Dist">
+                                        <img src="images/menu_icons/2D Dist.svg" alt="btnIcon">
+                                    </button>
+                                    <button class="btn btn-sm bg-primary-subtle" title="3D Dist">
+                                        <img src="images/menu_icons/3D Dist.svg" alt="btnIcon">
+                                    </button>
+                                    <button class="btn btn-sm bg-primary-subtle" title="Area">
+                                        <img src="images/menu_icons/Area.svg" alt="btnIcon">
+                                    </button>
+                                    <button class="btn btn-sm bg-primary-subtle" title="Volume">
+                                        <img src="images/menu_icons/Volume.svg" alt="btnIcon">
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="page-container">
-                <div class="card card-body border-0">
+                
+                <div class="card card-body border-0 pt-2">
+                    <!-- <div class="d-flex align-items-center gap-3 mb-2">
+                        <span class="small text-nowrap">Kalbhairavnath Constructions And Supliers, Gat No-43, Agadgaon_48 
+                        </span>
+                        <select class="form-select form-select-sm shadow-none small w-auto bg-light">
+                            <option selected>Quarry - 20/08/25v</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                          </select>
+    
+                        
+                    </div> -->
+                    <!-- <div class="dash-filter">
+                        <div class="row">
+                            <div class="col-md-3 col-sm-4 border-end">
+                                <select class="form-select form-select-sm shadow-none small">
+                                    <option selected>Measurement Tools</option>
+                                    <option value="1">Planning Tools</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+                            <div class="col-md">
+                                <div class="d-flex align-items-center gap-1 filterBtnGroup">
+                                    <button class="btn btn-sm bg-primary-subtle" title="Location">
+                                        <img src="images/menu_icons/Location.svg" alt="btnIcon">
+                                    </button>
+                                    <button class="btn btn-sm bg-primary-subtle "  title="2D Dist">
+                                        <img src="images/menu_icons/2D Dist.svg" alt="btnIcon">
+                                    </button>
+                                    <button class="btn btn-sm bg-primary-subtle" title="3D Dist">
+                                        <img src="images/menu_icons/3D Dist.svg" alt="btnIcon">
+                                    </button>
+                                    <button class="btn btn-sm bg-primary-subtle" title="Area">
+                                        <img src="images/menu_icons/Area.svg" alt="btnIcon">
+                                    </button>
+                                    <button class="btn btn-sm bg-primary-subtle" title="Volume">
+                                        <img src="images/menu_icons/Volume.svg" alt="btnIcon">
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
                     <div class="map">
                         <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1585684.9189327639!2d76.48141108526595!3d18.166502268667102!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1740027894466!5m2!1sen!2sin" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>

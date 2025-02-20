@@ -3,18 +3,23 @@ nav.sidebar {
     width: 63px;
     background: #37597d;
     padding: 5px;
-    overflow: hidden;
+    /* overflow: hidden; */
+    overflow: auto;
     transition: all 0.3s;
     position: fixed;
     left: 0;
     z-index: 9999;
+    min-height: calc(100vh - 0px);
 }
 nav.sidebar:hover{
     width: 250px;
 }
-ul#nav_accordion {
+/* ul#nav_accordion {
     min-height: calc(100vh - 0px);
-}
+} */
+ .sidebar-ul-group{
+    min-height: calc(100vh - 70px);
+ }
 .sidebar-item.sidebar-brand {
     overflow: hidden;
 }
